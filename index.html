@@ -14,7 +14,7 @@
       color: #ffffff !important;
       font-weight: bold;
     }
-    .gradient-bg{
+    .bg{
       background: #F1F3FF;
     }
     .carousel-control-prev-icon{
@@ -27,7 +27,7 @@
 </head>
 <body>
   <!-- Header & Our Service -->
-  <div class="gradient-bg">
+  <div class="bg">
 
     <!-- Header -->
     <div id="header" class="container">
@@ -146,7 +146,7 @@
   </div>
 
   <!-- Testimonial -->
-  <div class="container">
+  <div class="container d-flex flex-column align-items-center">
     <div class="px-4 pt-5 my-5 text-center">
       <h1 class="display-4 fw-bold text-body-emphasis">Testimonial</h1>
       <div class="col-lg-6 mx-auto">
@@ -155,28 +155,56 @@
     </div>
 
     <!-- Carousel -->
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
+    <div id="carouselExample" class="bg w-75 carousel slide py-4">
+      <div class="carousel-inner py-5">
 
         <!-- Carousel Item -->
-        <div class="carousel-item active">
-          
+        <div class="carousel-item active d-flex justify-content-center">
+          <div class="w-75 d-flex justify-content-center">
+            <div class="d-flex w-75 gap-5">
+              <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
+              <div class="d-flex flex-column gap-1">
+                <img src="public/assets/star.png" width="100" alt="">
+                <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                <p class="mb-0 fw-semibold">John Dee 32, Bromo</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="public/assets/img_car.png" class="d-block w-100" alt="...">
+        <div class="carousel-item active d-flex justify-content-center">
+          <div class="w-75 d-flex justify-content-center">
+            <div class="d-flex w-75 gap-5">
+              <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
+              <div class="d-flex flex-column gap-1">
+                <img src="public/assets/star.png" width="100" alt="">
+                <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                <p class="mb-0 fw-semibold">John Dee 32, Bromo</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="public/assets/img_car.png" class="d-block w-100" alt="...">
+        <div class="carousel-item active d-flex justify-content-center">
+          <div class="w-75 d-flex justify-content-center">
+            <div class="d-flex w-75 gap-5">
+              <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
+              <div class="d-flex flex-column gap-1">
+                <img src="public/assets/star.png" width="100" alt="">
+                <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                <p class="mb-0 fw-semibold">John Dee 32, Bromo</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- button next & prev -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="w-25 h-25 carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
+
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="w-25 h-25 carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
