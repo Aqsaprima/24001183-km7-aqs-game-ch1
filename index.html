@@ -6,6 +6,15 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
+    @font-face {
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: normal;
+      src: url('public/fonts/Helvetica.woff') format('woff');
+    }
+    body {
+      font-family: 'Helvetica' !important;
+    }
     #header .nav-link{
       color: #000000;
     }
@@ -14,14 +23,35 @@
       color: #ffffff !important;
       font-weight: bold;
     }
+    .nav-item {
+      margin-right: 36px;
+    }
+    .nav-link {
+      padding: 8px 0;
+    }
+    .nav-link.btn-green{
+      padding: 8px 12px;
+    }
     .bg{
       background: #F1F3FF;
     }
-    .carousel-control-prev-icon{
-      background-image: url(public/assets/LeftButton.png);
+    .fosi-14{
+      font-size: 14px;
     }
-    .carousel-control-next-icon{
-      background-image: url(public/assets/RightButton.png);
+    .fosi-36{
+      font-size: 36px;
+    }
+    .why-us{
+      margin: 0 136px;
+    }
+    .cta{
+      margin: 0 136px;
+      padding: 64px;
+      background: #0D28A6;
+      color: #ffffff;
+    }
+    .faq{
+      margin: 0 136px;
     }
   </style>
 </head>
@@ -38,11 +68,11 @@
 
         <!-- nav besar -->
         <ul class="d-none d-sm-flex nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link">Our Services</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Why Us</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Terminal</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="btn-green nav-link active">Register</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">Our Services</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">Why Us</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">Terminal</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item fw-bold fosi-14 me-0"><a href="#" class="btn-green nav-link active">Register</a></li>
         </ul>
 
         <!-- nav kecil -->
@@ -65,10 +95,10 @@
     <div id="Our-Service" class="">
       <div class="d-flex align-items-center">
         <div class="col-5 container me-2">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-          <p class="lead">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+          <h1 class="fosi-36 fw-bold text-body-emphasis lh-1 mb-3">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+          <p class="fosi-14 lead" style="width: 80%;">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-green btn-lg px-4 me-md-2">Mulai Sewa Mobil</button>
+            <button type="button" class="btn btn-green fw-bold fosi-14 px-4 me-md-2">Mulai Sewa Mobil</button>
           </div>
         </div>
         <div class="col-6 d-flex justify-content-end">
@@ -85,14 +115,14 @@
         <img src="public/assets/img_service.png" class="d-block img-fluid" alt="Bootstrap Themes" loading="lazy">
       </div>
       <div class="col-5 ps-5 ms-5">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Best Car Rental for any kind of trip in (Lokasimu)!</h1>
-        <p class="lead">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+        <h1 class="fs-4 fw-bold text-body-emphasis lh-1 mb-3">Best Car Rental for any kind of trip in (Lokasimu)!</h1>
+        <p class="lead fosi-14">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
         <ul class="nav gap-3">
-          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0">Sewa Mobil Dengan Supir di Bali 12 Jam</p></li>
-          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0">Sewa Mobil Lepas Kunci di Bali 24 Jam</p></li>
-          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0">Sewa Mobil Jangka Panjang Bulanan</p></li>
-          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0">Gratis Antar - Jemput Mobil di Bandara</p></li>
-          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0">Layanan Airport Transfer / Drop In Out</p></li>
+          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0 fosi-14 fw-light">Sewa Mobil Dengan Supir di Bali 12 Jam</p></li>
+          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0 fosi-14 fw-light">Sewa Mobil Lepas Kunci di Bali 24 Jam</p></li>
+          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0 fosi-14 fw-light">Sewa Mobil Jangka Panjang Bulanan</p></li>
+          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0 fosi-14 fw-light">Gratis Antar - Jemput Mobil di Bandara</p></li>
+          <li class="d-flex gap-4 align-items-center nav-item"><img src="public/assets/centang.png" width="24" height="24"><p class="mb-0 fosi-14 fw-light">Layanan Airport Transfer / Drop In Out</p></li>
         </ul>
       </div>
       
@@ -100,45 +130,45 @@
   </div>
 
   <!-- why us? -->
-  <div class="d-flex row mx-5 px-3">
+  <div class="d-flex row why-us">
     <div class="px-3 pt-5 my-5">
-      <h1 class="display-6 fw-semibold">Why Us?</h1>
+      <h1 class="fs-4 fw-bold">Why Us?</h1>
       <div class="">
-        <p class="lead">Mengapa harus pilih Binar Car Rental?</p>
+        <p class="lead fosi-14">Mengapa harus pilih Binar Car Rental?</p>
       </div>
     </div>
   
     <!-- cards -->
     <div class="d-flex gap-5">
-      <div class="card gap-3 p-3">
+      <div class="card gap-3 p-3 w-25">
         <img src="public/assets/why1.png" width="32">
         <div class="card-body p-0">
-          <h5 class="card-title">Mobil Lengkap</h5>
-          <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+          <h5 class="card-title fs-6 fw-bold">Mobil Lengkap</h5>
+          <p class="card-text fw-light fosi-14">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
         </div>
       </div>
     
-      <div class="card gap-3 p-3">
+      <div class="card gap-3 p-3 w-25">
         <img src="public/assets/why2.png" width="32">
         <div class="card-body p-0">
-          <h5 class="card-title">Mobil Lengkap</h5>
-          <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+          <h5 class="card-title fs-6 fw-bold">Harga Murah</h5>
+          <p class="card-text fw-light fosi-14">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
         </div>
       </div>
     
-      <div class="card gap-3 p-3">
+      <div class="card gap-3 p-3 w-25">
         <img src="public/assets/why3.png" width="32">
         <div class="card-body p-0">
-          <h5 class="card-title">Mobil Lengkap</h5>
-          <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+          <h5 class="card-title fs-6 fw-bold">Layanan 24 Jam</h5>
+          <p class="card-text fw-light fosi-14">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
         </div>
       </div>
     
-      <div class="card gap-3 p-3">
+      <div class="card gap-3 p-3 w-25">
         <img src="public/assets/why4.png" width="32">
         <div class="card-body p-0">
-          <h5 class="card-title">Mobil Lengkap</h5>
-          <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+          <h5 class="card-title fs-6 fw-bold">Sopir Profesional</h5>
+          <p class="card-text fw-light fosi-14">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
         </div>
       </div>
     </div>
@@ -148,9 +178,9 @@
   <!-- Testimonial -->
   <div class="container d-flex flex-column align-items-center">
     <div class="px-4 pt-5 my-5 text-center">
-      <h1 class="display-4 fw-bold text-body-emphasis">Testimonial</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Berbagai review positif dari para pelanggan kami</p>
+      <h1 class="fs-4 fw-bold text-body-emphasis">Testimonial</h1>
+      <div class="mx-auto">
+        <p class="lead fosi-14 mb-4">Berbagai review positif dari para pelanggan kami</p>
       </div>
     </div>
 
@@ -159,38 +189,46 @@
       <div class="carousel-inner py-5">
 
         <!-- Carousel Item -->
-        <div class="carousel-item active d-flex justify-content-center">
-          <div class="w-75 d-flex justify-content-center">
-            <div class="d-flex w-75 gap-5">
-              <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
-              <div class="d-flex flex-column gap-1">
-                <img src="public/assets/star.png" width="100" alt="">
-                <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                <p class="mb-0 fw-semibold">John Dee 32, Bromo</p>
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="w-75 d-flex justify-content-center">
+              <div class="d-flex w-75 gap-5">
+                <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
+                <div class="d-flex flex-column gap-1">
+                  <img src="public/assets/star.png" width="100" alt="">
+                  <p class="fosi-14 fw-light mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p class="mb-0 fw-normal fosi-14">John Dee 32, Bromo</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item active d-flex justify-content-center">
-          <div class="w-75 d-flex justify-content-center">
-            <div class="d-flex w-75 gap-5">
-              <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
-              <div class="d-flex flex-column gap-1">
-                <img src="public/assets/star.png" width="100" alt="">
-                <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                <p class="mb-0 fw-semibold">John Dee 32, Bromo</p>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="w-75 d-flex justify-content-center">
+              <div class="d-flex w-75 gap-5">
+                <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
+                <div class="d-flex flex-column gap-1">
+                  <img src="public/assets/star.png" width="100" alt="">
+                  <p class="fosi-14 fw-light mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p class="mb-0 fw-normal fosi-14">John Dee 32, Bromo</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item active d-flex justify-content-center">
-          <div class="w-75 d-flex justify-content-center">
-            <div class="d-flex w-75 gap-5">
-              <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
-              <div class="d-flex flex-column gap-1">
-                <img src="public/assets/star.png" width="100" alt="">
-                <p class="mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                <p class="mb-0 fw-semibold">John Dee 32, Bromo</p>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="w-75 d-flex justify-content-center">
+              <div class="d-flex w-75 gap-5">
+                <img src="public/assets/testimoni.png" class="w-50 object-fit-contain" alt="">
+                <div class="d-flex flex-column gap-1">
+                  <img src="public/assets/star.png" width="100" alt="">
+                  <p class="fosi-14 fw-light mb-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p class="mb-0 fw-normal fosi-14">John Dee 32, Bromo</p>
+                </div>
               </div>
             </div>
           </div>
@@ -198,17 +236,106 @@
       </div>
 
       <!-- button next & prev -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="w-25 h-25 carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+      <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <svg width="57" height="68" viewBox="0 0 57 68" fill="none">
+          <path d="M35.4836 51L21.2902 34L35.4836 17" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
       </button>
 
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="w-25 h-25 carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+      <button class="carousel-control-next opacity-100" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <svg width="57" height="68" viewBox="0 0 57 68" fill="none">
+          <path d="M21.5164 51L35.7098 34L21.5164 17" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
     </div>
   </div>
+
+  <!-- CTA banner -->
+  <div class="cta rounded d-flex align-items-center flex-column">
+    <p class="mb-0 fw-bold fosi-36">Sewa Mobil di (Lokasimu) Sekarang</p>
+    <p class="mb-0 fw-light fosi-14 w-50 text-center mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button type="button" class="btn btn-green fw-bold fosi-14 px-4 me-md-2">Mulai Sewa Mobil</button>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq d-flex justify-content-between">
+    <div class="">
+      <p class="mb-0 fw-bold fosi-36">Frequently Asked Question</p>
+      <p class="mb-0 fw-light fosi-14 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="w-50">
+      <div class="accordion gap-2 d-flex flex-column" id="accordionExample">
+        <div class="accordion-item border rounded">
+          <h2 class="accordion-header border rounded">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Apa saja syarat yang dibutuhkan?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border rounded">
+          <h2 class="accordion-header border rounded">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Berapa hari minimal sewa mobil lepas kunci?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border rounded">
+          <h2 class="accordion-header border rounded">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Berapa hari sebelumnya sabaiknya booking sewa mobil?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border rounded">
+          <h2 class="accordion-header border rounded">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Apakah Ada biaya antar-jemput?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border rounded">
+          <h2 class="accordion-header border rounded">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Bagaimana jika terjadi kecelakaan
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
