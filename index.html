@@ -22,44 +22,39 @@
 
         <!-- nav besar -->
         <ul class="d-none d-sm-flex nav nav-pills">
-          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">Our Services</a></li>
-          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">Why Us</a></li>
-          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">Terminal</a></li>
-          <li class="nav-item fw-normal fosi-14"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#ourservice" class="nav-link">Our Services</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#testimonial" class="nav-link">Testimonial</a></li>
+          <li class="nav-item fw-normal fosi-14"><a href="#faq" class="nav-link">FAQ</a></li>
           <li class="nav-item fw-bold fosi-14 me-0"><a href="#" class="btn-green nav-link active">Register</a></li>
         </ul>
 
         <!-- nav kecil -->
-        <div class="flex-shrink-0 p-3" style="width: 280px;">
-          <a href="/" class="d-flex mb-3 link-body-emphasis text-decoration-none">
-            <span class="fs-5 fw-semibold">BCR</span>
+        <div id="burger" class="d-block d-sm-none flex-shrink-0 dropdown">
+          <img src="public/assets/burger.png" alt="mdo" width="40" class="rounded-circle" onclick="showSidebar()">
+        </div>
+        <div id="sidebar" class="flex-shrink-0 p-3">
+          <a href="/" class="d-flex align-items-center justify-content-between mb-3 link-body-emphasis text-decoration-none">
+            <span class="fw-bold fosi-14">BCR</span>
+            <div id="close" onclick="closeSidebar()">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </div>
           </a>
           <ul class="list-unstyled ps-0">
             <li class="mb-1">
               <ul class="list-unstyled fw-normal pb-1 small d-flex flex-column gap-3">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Our Services</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Why Us</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Testimony</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">FAQ</a></li>
+                <li><a onclick="closeSidebar()" href="#ourservice" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Our Services</a></li>
+                <li><a onclick="closeSidebar()" href="#why-us" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Why Us</a></li>
+                <li><a onclick="closeSidebar()" href="#testimonial" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Testimony</a></li>
+                <li><a onclick="closeSidebar()" href="#faq" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">FAQ</a></li>
                 <li class="nav-item fw-bold fosi-14 me-0"><a href="#" class="btn-green text-decoration-none fw-bold fosi-14">Register</a></li>
               </ul>
             </li>
           </ul>
         </div>
-
-        <div class="d-block d-sm-none flex-shrink-0 dropdown">
-          <a href="#" class="link-body-emphasis text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="public/assets/burger.png" alt="mdo" width="40" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small shadow">
-            <li class="dropdown-item"><a class="text-decoration-none text-black" href="#">Our Services</a></li>
-            <li class="dropdown-item"><a class="text-decoration-none text-black" href="#">Why Us</a></li>
-            <li class="dropdown-item"><a class="text-decoration-none text-black" href="#">Terminal</a></li>
-            <li class="dropdown-item"><a class="text-decoration-none text-black" href="#">FAQ</a></li>
-            <li class="dropdown-item"><a class="text-decoration-none text-black" href="#">Register</a></li>
-          </ul>
-        </div>
-        
       </header>
     </div>
 
@@ -353,5 +348,16 @@
       <img src="public/assets/logo.png" width="100" height="34" alt="">
     </div>
   </div>
+
+  <script>
+    function showSidebar() {
+      document.getElementById('sidebar').style.display = 'block';
+      document.getElementById('burger').style.display = 'none';
+    }
+    function closeSidebar() {
+      document.getElementById('sidebar').style.display = 'none';
+      document.getElementById('burger').style.display = 'block';
+    }
+  </script>
 </body>
 </html>

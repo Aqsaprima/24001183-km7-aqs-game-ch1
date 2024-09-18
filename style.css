@@ -68,6 +68,15 @@ body {
     padding: 8px 12px;
     border-radius: 2px;
   }
+  #sidebar {
+    display: none;
+    position: absolute;
+    background: white;
+    right: 0;
+    top: 0;
+    width: 180px;
+    height: 100vh;
+  }
   #ourservice {
     margin: 60px 0;
   }  
