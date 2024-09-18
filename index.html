@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,6 +30,23 @@
         </ul>
 
         <!-- nav kecil -->
+        <div class="flex-shrink-0 p-3" style="width: 280px;">
+          <a href="/" class="d-flex mb-3 link-body-emphasis text-decoration-none">
+            <span class="fs-5 fw-semibold">BCR</span>
+          </a>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <ul class="list-unstyled fw-normal pb-1 small d-flex flex-column gap-3">
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Our Services</a></li>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Why Us</a></li>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">Testimony</a></li>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none fw-normal fosi-14">FAQ</a></li>
+                <li class="nav-item fw-bold fosi-14 me-0"><a href="#" class="btn-green text-decoration-none fw-bold fosi-14">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
         <div class="d-block d-sm-none flex-shrink-0 dropdown">
           <a href="#" class="link-body-emphasis text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="public/assets/burger.png" alt="mdo" width="40" class="rounded-circle">
@@ -41,6 +59,7 @@
             <li class="dropdown-item"><a class="text-decoration-none text-black" href="#">Register</a></li>
           </ul>
         </div>
+        
       </header>
     </div>
 
@@ -93,7 +112,7 @@
   
     <!-- cards -->
     <div class="d-flex flex-column flex-sm-row gap-5">
-      <div class="card gap-3 p-3 col-11 col-sm-3">
+      <div class="card gap-3 p-3 card-mobile">
         <img src="public/assets/why1.png" width="32">
         <div class="card-body p-0">
           <h5 class="card-title fs-6 fw-bold">Mobil Lengkap</h5>
@@ -101,7 +120,7 @@
         </div>
       </div>
     
-      <div class="card gap-3 p-3 col-11 col-sm-3">
+      <div class="card gap-3 p-3 card-mobile">
         <img src="public/assets/why2.png" width="32">
         <div class="card-body p-0">
           <h5 class="card-title fs-6 fw-bold">Harga Murah</h5>
@@ -109,7 +128,7 @@
         </div>
       </div>
     
-      <div class="card gap-3 p-3 col-11 col-sm-3">
+      <div class="card gap-3 p-3 card-mobile">
         <img src="public/assets/why3.png" width="32">
         <div class="card-body p-0">
           <h5 class="card-title fs-6 fw-bold">Layanan 24 Jam</h5>
@@ -117,7 +136,7 @@
         </div>
       </div>
     
-      <div class="card gap-3 p-3 col-11 col-sm-3">
+      <div class="card gap-3 p-3 card-mobile">
         <img src="public/assets/why4.png" width="32">
         <div class="card-body p-0">
           <h5 class="card-title fs-6 fw-bold">Sopir Profesional</h5>
@@ -206,18 +225,18 @@
   <!-- CTA banner -->
   <div id="cta" class="rounded d-flex align-items-center flex-column">
     <p class="mb-0 fw-bold fosi-36">Sewa Mobil di (Lokasimu) Sekarang</p>
-    <p class="mb-0 fw-light fosi-14 w-50 text-center mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="mb-0 fw-light fosi-14 w-sm-50 text-center mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <button type="button" class="btn btn-green fw-bold fosi-14 px-4 me-md-2">Mulai Sewa Mobil</button>
   </div>
 
   <!-- FAQ -->
-  <div id="faq" class="d-flex justify-content-between">
-    <div class="">
+  <div id="faq" class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="mb-4 mb-sm-0">
       <p class="mb-0 fw-bold fosi-36">Frequently Asked Question</p>
       <p class="mb-0 fw-light fosi-14 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     </div>
 
-    <div class="w-50">
+    <div class="w-sm-50">
       <div class="accordion gap-3 d-flex flex-column" id="accordionExample">
         <div class="accordion-item border rounded">
           <h2 class="accordion-header border rounded">
@@ -289,8 +308,8 @@
   </div>
 
   <!-- Footer -->
-  <div id="footer" class="d-flex justify-content-between">
-    <div class="w-25">
+  <div id="footer" class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="w-sm-25">
       <p class="fw-light fosi-14">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
       <p class="fw-light fosi-14">binarcarrental@gmail.com</p>
       <p class="fw-light fosi-14">081-233-334-808</p>
@@ -329,7 +348,7 @@
         </svg>                                        
       </div>
     </div>
-    <div class="w-25">
+    <div class="w-sm-25 mt-3 mt-sm-0">
       <p class="fw-light fosi-14">Copyright Binar 2022</p>
       <img src="public/assets/logo.png" width="100" height="34" alt="">
     </div>
