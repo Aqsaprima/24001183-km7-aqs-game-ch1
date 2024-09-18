@@ -33,11 +33,11 @@ body {
 .fosi-36{
   font-size: 36px;
 }
-#why-us{
-  margin: 0 136px;
-}
 #ourservice{
   margin: 100px 206px;
+}
+#why-us{
+  margin: 0 136px;
 }
 #testimonial{
   margin: 100px 304px 156px;
@@ -53,4 +53,22 @@ body {
 }
 #footer{
   margin: 0 136px 100px;
+}
+
+@media (max-width: 360px) {
+  #ourservice {
+    margin: 60px 0;
+  }  
+  #why-us {
+    margin: 0 16px;
+  }
+  #title-why-us {
+    text-align: center;
+  }
+  #testimonial {
+    margin: 60px 0 88px;
+  }
+  #carouselExample {
+    width: 90%;
+  }
 }
