@@ -33,6 +33,15 @@ body {
 .fosi-36{
   font-size: 36px;
 }
+#sidebar {
+  display: none;
+  position: absolute;
+  background: white;
+  right: 0;
+  top: 0;
+  width: 180px;
+  height: 100vh;
+}
 #ourservice{
   margin: 100px 206px;
 }
@@ -67,15 +76,6 @@ body {
   .btn-green.text-decoration-none.fw-bold.fosi-14 {
     padding: 8px 12px;
     border-radius: 2px;
-  }
-  #sidebar {
-    display: none;
-    position: absolute;
-    background: white;
-    right: 0;
-    top: 0;
-    width: 180px;
-    height: 100vh;
   }
   #ourservice {
     margin: 60px 0;
