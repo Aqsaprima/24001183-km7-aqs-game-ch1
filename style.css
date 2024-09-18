@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('public/fonts/Helvetica.woff') format('woff');
+}
+body {
+  font-family: 'Helvetica' !important;
+}
+#header .nav-link{
+  color: #000000;
+}
+.btn-green{
+  background-color: #5CB85F !important;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+.nav-item {
+  margin-right: 36px;
+}
+.nav-link {
+  padding: 8px 0;
+}
+.nav-link.btn-green{
+  padding: 8px 12px;
+}
+.bg{
+  background: #F1F3FF;
+}
+.fosi-14{
+  font-size: 14px;
+}
+.fosi-36{
+  font-size: 36px;
+}
+#why-us{
+  margin: 0 136px;
+}
+#ourservice{
+  margin: 100px 206px;
+}
+#testimonial{
+  margin: 100px 304px 156px;
+}
+#cta{
+  margin: 0 136px;
+  padding: 64px;
+  background: #0D28A6;
+  color: #ffffff;
+}
+#faq{
+  margin: 100px 136px 150px;
+}
+#footer{
+  margin: 0 136px 100px;
+}
